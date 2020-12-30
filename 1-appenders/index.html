@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Append rows!</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Add rows to a table!</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4">
+                <button id="button" type="button" class="btn btn-primary">Add a row!</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-4" id="the-table">
+
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Occupation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- D3 will fill this -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
