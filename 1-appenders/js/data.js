@@ -1,3 +1,4 @@
+// "Actual" data for table
 var data = [
     {name: "Matt",
      age: 30,
@@ -14,3 +15,10 @@ var data = [
      occupation: "Escapist"
     }
 ];
+
+// Placeholder data for when we run out of data
+var placeholder = {
+    name: "Unknown",
+    age: "Who knows...",
+    occupation: "???"
+};

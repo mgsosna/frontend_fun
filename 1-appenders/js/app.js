@@ -1,10 +1,3 @@
-// Create placeholder data for row
-var placeholder = {
-    name: "Unknown",
-    age: "Who knows...",
-    occupation: "???"
-};
-
 // Instantiate location in data
 var index = 0;
 
