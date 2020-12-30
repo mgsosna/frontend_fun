@@ -27,7 +27,7 @@ function addRow(){
     });
 
     // Update index
-    index ++ ;
+    index++ ;
 
 }
 
