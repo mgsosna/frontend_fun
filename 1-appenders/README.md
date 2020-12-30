@@ -1,7 +1,7 @@
 # Add rows to a table
 This is a simple project utilizing [D3.js](https://d3js.org/) and [Bootstrap](https://getbootstrap.com/docs/3.4/css/) to add rows to a table when the user clicks the button.
 
-<img src="table.png" height="75%" width="75%">
+<img src="table.png" height="50%" width="50%">
 
 ### Behind the scenes!
 `data.js` stores an array of objects, `data`, that serves as the "actual" data for our table. It also has an object, `placeholder`, that we use to fill rows in the table once we run out of arrays in `data`.
