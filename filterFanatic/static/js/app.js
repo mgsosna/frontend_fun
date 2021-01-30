@@ -1,8 +1,3 @@
-const colors = {
-    'A': 'red',
-    'B': 'orange'
-};
-
 function fillTable(data) {
 
     data.forEach(obj => {
@@ -19,7 +14,7 @@ function onlyUnique(value, index, self) {
 }
 
 function plotData(data) {
-    var plotData = [];
+    var dataForPlot = [];
 
     var categories = data.map(d => d.category);
     var unique = categories.filter(onlyUnique);
@@ -27,23 +22,29 @@ function plotData(data) {
     unique.forEach(category => {
 
         var filteredData = data.filter(d => d.category == category);
+        var color = CATEGORIES[category].color;
 
         var trace = {x: filteredData.map(d => d.x),
                      y: filteredData.map(d => d.y),
                      mode: "markers",
                      type: "scatter",
-                     color: colors[category],
+                     marker:
+                        {color: color},
                      name: category};
 
-        plotData.push(trace);
+        dataForPlot.push(trace);
     });
 
     var layout = {title: "Our plot"};
 
-    Plotly.newPlot("plot", plotData, layout);
+    Plotly.newPlot("plot", dataForPlot, layout);
 }
 
 
 // Init
 fillTable(data);
 plotData(data);
+
+d3.select("#input").on("change", function() {
+    console.log(this.value);
+})
