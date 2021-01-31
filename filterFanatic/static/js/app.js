@@ -80,8 +80,6 @@ function refresh() {
     plotData();
 }
 
-d3.select("#A").on("change", refresh);
-d3.select("#B").on("change", refresh);
-d3.select("#C").on("change", refresh);
+d3.selectAll("input").on("change", refresh);
 
 refresh();

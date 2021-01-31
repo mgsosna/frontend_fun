@@ -17,6 +17,8 @@ const CATEGORIES = {
 };
 
 const N_SAMPLES = 50;
+const X_SPREAD = 4;
+const Y_SPREAD = 8;
 
 var DATA = [];
 
@@ -27,8 +29,8 @@ Object.entries(CATEGORIES).forEach(obj => {
 
         var sample = {
             category: obj[0],
-            x: (obj[1].x_mean + 4 * Math.random()).toFixed(2),
-            y: (obj[1].y_mean + 8 * Math.random()).toFixed(2)
+            x: (obj[1].x_mean + X_SPREAD * Math.random()).toFixed(2),
+            y: (obj[1].y_mean + Y_SPREAD * Math.random()).toFixed(2)
         };
 
         DATA.push(sample);
